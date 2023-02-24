@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f1a54d22ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href=""><img src="logos000005.png" alt="" /></a>
+
+        <a href="./cart.html" target="_blank">
+          <i class="fa-solid fa-bag-shopping"> </i
+        ></a>
+      </div>
+    </div>
+    <div id="main">
+      <!-- show data here -->
+    </div>
+  </body>
+  <script>
+    async function fetchdata() {
+      try {
+        let res = await fetch(
+          "https://63ccef79d4d47898e38fe6ca.mockapi.io/products"
+        );
+        res = await res.json();
+        displayproduct(res);
+        console.log(res);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchdata();
+    let container = document.getElementById("main");
+
+    function displayproduct(res) {
+      res.forEach((res) => {
+        let card = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = res.image;
+        let name = document.createElement("h4");
+        let desc = document.createElement("p");
+        let price = document.createElement("h3");
+        let cart = document.createElement("button");
+        cart.addEventListener("click", add2cart(res));
+        cart.addEventListener("click", alertOnAdd(res.name));
+        cart.innerText = "Add to cart";
+        img.textContent = res.image;
+        name.textContent = res.name;
+        desc.textContent = res.description;
+        price.textContent = `₹${res.price}`;
+        card.append(img, name, desc, price, cart);
+        container.append(card);
+      });
+    }
+
+    function add2cart(product) {
+      return function () {
+        let productsCartJSON = localStorage.getItem(`products_cart`);
+        console.log(productsCartJSON)
+        const productsCart = productsCartJSON
+          ? JSON.parse(productsCartJSON)
+          : {};
+        // const productsCart = localStorage.getItem(`Product_id_${product.id}`);
+        if (!productsCart[`Product_id_${product.id}`]) {
+          const tempProduct = {
+            product: product,
+            quantity: 1,
+          };
+          productsCart[`Product_id_${product.id}`] = tempProduct;
+        } else {
+
+          productsCart[`Product_id_${product.id}`].quantity += 1;
+        }
+        localStorage.setItem(`products_cart`, JSON.stringify(productsCart));
+      };
+    }
+
+    function alertOnAdd(productName) {
+      return function () {
+        alert(`You have successfully added ${productName} to the cart`);
+      };
+    }
+  </script>
+</html>

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.cart-product{
+    display: flex;
+    border: 1px solid black;
+    margin: 16px 8px;
+}
+
+.cart-product .product-img img {
+    width: 160px;
+    margin: 4px;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.cart-product .product-description {
+    width: calc(100% - 16s0px);
+    margin: 8px;
+}
