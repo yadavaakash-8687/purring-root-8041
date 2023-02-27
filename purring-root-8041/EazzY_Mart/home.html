@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EazzY_MArt</title>
+    <!--fevicon icon-->
+    <link rel="icon" href="img/WhatsApp Image 2023-02-22 at 00.24.29.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="align-items: center;">
+    <header class="header">
+      <div class="headerLeft">
+        <div class="logoContainer">
+          <img src="img/WhatsApp Image 2023-02-22 at 00.24.29.jpg" />
+        </div>
+
+        <!--seach box-->
+        <div class="searchInputContainer">
+          <div class="searchIcon">
+            <img src="./img/search.png" />
+          </div>
+          <form action="" id="inputForm">
+            <input
+              type="text"
+              placeholder="Try Saree, Kurti or Search by Product Code"
+              class="inputSearch"
+            />
+          </form>
+          <div class="inputCloseSearch">
+            <i class="fa-solid fa-xmark" id="closeSearch"></i>
+          </div>
+
+          <div class="searchRecentModal">
+            <h3>Recent Searches</h3>
+            <div class="listofRecent"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="headerRight">
+        <div class="downloadContainer">
+          <div class="mobileIcon">
+            <img src="./img/mobile.png" />
+          </div>
+          <p>Download App</p>
+
+          <div class="downloadHoverBtnContainer">
+            <h3>Download From</h3>
+
+            <a href="" class="downloadBtn">
+              <img
+                src="https://images.meesho.com/images/pow/playstore-icon-big.webp"
+              />
+            </a>
+            <a href="" class="downloadBtn">
+              <img
+                src="https://images.meesho.com/images/pow/appstore-icon-big.webp"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="becomeSupplierContainer">
+          <p>Become a Supplier</p>
+        </div>
+
+        <div class="profileAndCart">
+          <div class="profileContainer">
+            <div class="profileIcon">
+              <img src="./img/user.png" />
+            </div>
+            <a  target="
+            " href="login.html"><p>Profile</p></a>
+            
+          </div>
+
+          <div class="CartContainer">
+            <div class="CartIcon">
+              <a href="cart.html" target="_blank"
+                ><img src="./img/cart.png"
+              /></a>
+            </div>
+            <p>Cart</p>
+          </div>
+        </div>
+      <!-- </div> -->
+    </header>
+
+    <!--navigation-->
+    <nav>
+      <ul>
+        <li>
+          Women Ethnic
+          <div class="subMenu">
+            <div id="womenEthic" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Women Western
+          <div class="subMenu">
+            <div id="womenWestern" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Men
+          <div class="subMenu">
+            <div id="men" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Kids
+          <div class="subMenu">
+            <div id="kids" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Home & Kitchen
+          <div class="subMenu">
+            <div id="HomeAndKitchen" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Beauty & Health
+          <div class="subMenu">
+            <div id="beautyAndHealth" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Jewellery & Accessories
+          <div class="subMenu">
+            <div id="JewelleryAndAccessories" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Bags & Footwear
+          <div class="subMenu">
+            <div id="BagsFootWarId" class="submenuList"></div>
+          </div>
+        </li>
+        <li>
+          Electronics
+          <div class="subMenu">
+            <div id="ElectronicsId" class="submenuList"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!--lowest prices-->
+    <!-- Slideshow container -->
+    <!-- <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1677093847_Hot_Food_Fest_1680.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://www.jiomart.com/images/cms/aw_rbslider/sli…7093785_Urban_Ladder_Furniture_Range_DesKtop_.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <a href="products.html"><img
+          src="	https://www.jiomart.com/images/cms/aw_rbslider/slides/1676559673_Desktop_kitchenware.jpg"
+          style="width: 100%"
+        /></a>
+        
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div> -->
+
+    
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- <div class="lowestpriceContainer">
+        
+        
+        <!-- <div class="lowestPrice_text">
+            <h1>Lowest Prices </h1>
+            <h1>Best Quality Shopping</h1>
+            <div class="lowestPriceWhay">
+                <div class="lowestPriceItem">
+                    <div class="lowestPrice_icon">
+                        <img src="https://images.meesho.com/images/pow/freeDelivery.svg" />
+                    </div>
+                    <p>Free Delivery</p>
+                </div>
+
+                <div class="lowestPriceItem">
+                    <div class="lowestPrice_icon">
+                        <img src="https://images.meesho.com/images/pow/cod.svg" />
+                    </div>
+                    <p>Cash on Delivery</p>
+                </div>
+                <div class="lowestPriceItem">
+                    <div class="lowestPrice_icon">
+                        <img src="https://images.meesho.com/images/pow/easyReturns.svg" />
+                    </div>
+                    <p>Easy Returns</p>
+                </div>
+            </div>
+
+            <button class="downloadApp_contianer">
+                <div class="downloadAppIcon">
+                    <img src="https://images.meesho.com/images/pow/playstoreSmallIcon.webp" />
+                </div>
+                <p>Download the App</p>
+            </button>
+
+        </div>
+        <div class="lowestPrice_image">
+            <img src="https://images.meesho.com/images/marketing/1631722939962.webp" />
+        </div> -->
+    <!-- </div> -->
+    -->
+
+    <!--Top Categories to choose from-->
+    <div class="topCategoriesFrom">
+      <div class="topCategoriesHeading">
+        <span class="horizontalLine"></span>
+        <h1>Top Categories to choose from</h1>
+        <span class="horizontalLine"></span>
+      </div>
+      <div class="topCategoreisImage">
+        <a href="products.html" target="_blank"><img
+          src="https://images.meesho.com/images/marketing/1649760442043.webp"
+        /></a>
+        
+        <a href="products.html" target="_blank"><img
+          src="https://images.meesho.com/images/marketing/1649760423313.webp"
+        /></a>
+        
+        <a href="products.html" target="_blank"><img
+          src="https://images.meesho.com/images/marketing/1649759799809.webp"
+        /></a>
+        
+      </div>
+
+      <div class="essentialContaienr">
+        <img
+          src="https://images.meesho.com/images/marketing/1664368165450.webp"
+          class="essen-btn"
+        />
+
+        <div class="essential_item">
+          <img
+            src="https://images.meesho.com/images/marketing/1649760808952.webp"
+          />
+          <img
+            src="https://images.meesho.com/images/marketing/1664364866805.webp"
+          />
+        </div>
+
+        <div class="essential_item">
+          <img
+            src="https://images.meesho.com/images/marketing/1649760703179.webp"
+          />
+          <img
+            src="https://images.meesho.com/images/marketing/1664364917657.webp"
+          />
+        </div>
+
+        <div class="essential_item">
+          <img
+            src="https://images.meesho.com/images/marketing/1649760786763.webp"
+          />
+          <img
+            src="https://images.meesho.com/images/marketing/1664364898513.webp"
+          />
+        </div>
+      </div>
+
+      <div class="becomesellerBanner_Container">
+        <img
+          src="https://images.meesho.com/images/pow/downloadBannerDesktop.webp"
+          class="becomesellerBanner"
+        />
+        <div class="becomeSeller_Content">
+          <div class="becomeSeller_content_content">
+            <h2>Become a Seller and</h2>
+            <h1>Start your Online Business with Zero Investment</h1>
+            <div class="becomerSeller_appDownload_container">
+              <a href="#" class="becomerSeller_appDownload">
+                <img
+                  src="https://images.meesho.com/images/pow/playstoreIcon.webp"
+                />
+              </a>
+              <a href="#" class="becomerSeller_appDownload">
+                <img
+                  src="https://images.meesho.com/images/pow/appstoreIcon.webp"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="meesho_supper_container">
+        <img
+          src="https://images.meesho.com/images/pow/supplyBannerDesktop.webp"
+        />
+        <div class="meesho_supper_container_content">
+          <div class="meesho_supper_container_content_content">
+            <h1>Register as a Meesho Supplier</h1>
+            <p>Sell your products to crores of customers at 0% commission</p>
+            <div class="meesho-suppliear_benifit_container">
+              <div class="meesho_supper_benifit">
+                <img
+                  class="meeesho_benifit_image"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjVDMCA0Ljk4IDQuNDggMC41IDEwIDAuNUMxNS41MiAwLjUgMjAgNC45OCAyMCAxMC41QzIwIDE2LjAyIDE1LjUyIDIwLjUgMTAgMjAuNUM0LjQ4IDIwLjUgMCAxNi4wMiAwIDEwLjVaTTcuMjgyODggMTQuNzkyNUM3LjY3Mjg4IDE1LjE4MjUgOC4zMDI4OCAxNS4xODI1IDguNjkyODggMTQuNzkyNUwxNi4yNzI5IDcuMjAyNUMxNi42NjI5IDYuODEyNSAxNi42NjI5IDYuMTgyNSAxNi4yNzI5IDUuNzkyNUMxNS44ODI5IDUuNDAyNSAxNS4yNTI5IDUuNDAyNSAxNC44NjI5IDUuNzkyNUw3Ljk4Mjg4IDEyLjY3MjVMNS4xMDI4OCA5Ljc5MjVDNC43MTI4OCA5LjQwMjUgNC4wODI4OCA5LjQwMjUgMy42OTI4OCA5Ljc5MjVDMy41MDU2MiA5Ljk3OTMzIDMuNDAwMzkgMTAuMjMzIDMuNDAwMzkgMTAuNDk3NUMzLjQwMDM5IDEwLjc2MiAzLjUwNTYyIDExLjAxNTcgMy42OTI4OCAxMS4yMDI1TDcuMjgyODggMTQuNzkyNVoiIGZpbGw9IiMwNkE3NTkiLz4KPC9zdmc+Cg=="
+                />
+                <p>Grow your business 10x</p>
+              </div>
+              <div class="meesho_supper_benifit">
+                <img
+                  class="meeesho_benifit_image"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjVDMCA0Ljk4IDQuNDggMC41IDEwIDAuNUMxNS41MiAwLjUgMjAgNC45OCAyMCAxMC41QzIwIDE2LjAyIDE1LjUyIDIwLjUgMTAgMjAuNUM0LjQ4IDIwLjUgMCAxNi4wMiAwIDEwLjVaTTcuMjgyODggMTQuNzkyNUM3LjY3Mjg4IDE1LjE4MjUgOC4zMDI4OCAxNS4xODI1IDguNjkyODggMTQuNzkyNUwxNi4yNzI5IDcuMjAyNUMxNi42NjI5IDYuODEyNSAxNi42NjI5IDYuMTgyNSAxNi4yNzI5IDUuNzkyNUMxNS44ODI5IDUuNDAyNSAxNS4yNTI5IDUuNDAyNSAxNC44NjI5IDUuNzkyNUw3Ljk4Mjg4IDEyLjY3MjVMNS4xMDI4OCA5Ljc5MjVDNC43MTI4OCA5LjQwMjUgNC4wODI4OCA5LjQwMjUgMy42OTI4OCA5Ljc5MjVDMy41MDU2MiA5Ljk3OTMzIDMuNDAwMzkgMTAuMjMzIDMuNDAwMzkgMTAuNDk3NUMzLjQwMDM5IDEwLjc2MiAzLjUwNTYyIDExLjAxNTcgMy42OTI4OCAxMS4yMDI1TDcuMjgyODggMTQuNzkyNVoiIGZpbGw9IiMwNkE3NTkiLz4KPC9zdmc+Cg=="
+                />
+                <p>Enjoy 100% Profit</p>
+              </div>
+              <div class="meesho_supper_benifit">
+                <img
+                  class="meeesho_benifit_image"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjVDMCA0Ljk4IDQuNDggMC41IDEwIDAuNUMxNS41MiAwLjUgMjAgNC45OCAyMCAxMC41QzIwIDE2LjAyIDE1LjUyIDIwLjUgMTAgMjAuNUM0LjQ4IDIwLjUgMCAxNi4wMiAwIDEwLjVaTTcuMjgyODggMTQuNzkyNUM3LjY3Mjg4IDE1LjE4MjUgOC4zMDI4OCAxNS4xODI1IDguNjkyODggMTQuNzkyNUwxNi4yNzI5IDcuMjAyNUMxNi42NjI5IDYuODEyNSAxNi42NjI5IDYuMTgyNSAxNi4yNzI5IDUuNzkyNUMxNS44ODI5IDUuNDAyNSAxNS4yNTI5IDUuNDAyNSAxNC44NjI5IDUuNzkyNUw3Ljk4Mjg4IDEyLjY3MjVMNS4xMDI4OCA5Ljc5MjVDNC43MTI4OCA5LjQwMjUgNC4wODI4OCA5LjQwMjUgMy42OTI4OCA5Ljc5MjVDMy41MDU2MiA5Ljk3OTMzIDMuNDAwMzkgMTAuMjMzIDMuNDAwMzkgMTAuNDk3NUMzLjQwMDM5IDEwLjc2MiAzLjUwNTYyIDExLjAxNTcgMy42OTI4OCAxMS4yMDI1TDcuMjgyODggMTQuNzkyNVoiIGZpbGw9IiMwNkE3NTkiLz4KPC9zdmc+Cg=="
+                />
+                <p>Sell all over India</p>
+              </div>
+            </div>
+            <a href="#" class="signup_btn_now">Sign up now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Products For You-->
+    <div class="Product_container_You">
+      <h1>Products For You</h1>
+      <div class="product_container_you_content">
+        <aside class="product_category_you_aside">
+          <h3>Category</h3>
+          <div class="search_category_input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="display_Category_list">
+            <label for="bluetooth">
+              <input type="checkbox" id="bluetooth" />
+              <span>bluetooth Headset</span>
+            </label>
+            <label for="chains">
+              <input type="checkbox" id="chains" />
+              <span>Men Chains</span>
+            </label>
+            <label for="kurtas">
+              <input type="checkbox" id="kurtas" />
+              <span>Kurtas</span>
+            </label>
+            <label for="accessories">
+              <input type="checkbox" id="accessories" />
+              <span>Mobile Accessories</span>
+            </label>
+            <label for="sarees">
+              <input type="checkbox" id="sarees" />
+              <span>sarees</span>
+            </label>
+            <label for="watch">
+              <input type="checkbox" id="watch" />
+              <span>watch</span>
+            </label>
+          </div>
+        </aside>
+        <main class="product_category_display" id="product_category_displayId">
+          <--render product--->
+        </main>
+      </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+
+            <footer>
+              <div class="footer-text">
+                <h3>Be the first to know</h3>
+                <h6>
+                  stay up to date with all of our great fitting styles and new season
+                  arrivals. Plus,enjoy 40% off!
+                </h6>
+              </div>
+              <div>
+                <input type="text" name="" id="" placeholder="Email Adress" />
+                <input type="text" name="" id="" placeholder="Sign Up" />
+              </div>
+              <div>
+                <a href="./login.html" target="_blank"><img src="" /></a>
+        
+                <a href="./login.html" target="_blank"><img src="" /></a>
+        
+                <a href="./login.html" target="_blank"><img src="" /></a>
+        
+                <a href="./login.html" target="_blank"><img src="" /></a>
+              </div>
+              <div>
+                <h5>
+                  text JOIN TO 95400 TO SAVE 40% OFF NOW! PLUS, GET ONGOING OFFERS &
+                  STYLE ALERTS!
+                </h5>
+                <p>
+                  Msg&data rates may apply. Recurring audialed marketing messages will
+                  be sent to the mobile number provided at opt-in. <br />
+                  Consent is not a condition of purchase. Text STOP to quite. T&Cs &
+                  Privacy Policy
+                </p>
+              </div>
+              <div class="footer-3rdlast">
+                <div>
+                  <img src="" alt="" />
+                  <h4>Request a Free Catalog</h4>
+                  <p>
+                    Fresh New Style That Fit You Beautifully, Delivered Right TO Your
+                    Home
+                  </p>
+                </div>
+                <div>
+                  <img class="catalog"
+                  src="Images/footer images/2021-ca-footer-CATALOG.jpg" alt="" />
+                  <h4>Catherines Platinum Credit Card</h4>
+                  <p>
+                    Save $20 on your first purchase of $25+ when you open and use a
+                    Catherines Platinum Credit Card
+                  </p>
+                </div>
+              </div>
+              <div class="services">
+                <div class="serv" >
+                  
+                    <strong>Customer Services</strong>
+                 
+                  <ul>
+                    <li>Contact Us</li>
+                    <li>Shoppingh Info</li>
+                    <li>Return</li>
+                    <li>Exchange</li>
+                  </ul>
+                </div>
+                <div  class="serv">
+                  
+                    <strong>My Account</strong>
+                 
+                  <ul>
+                    <li>sign in/register</li>
+                    <li>Track My Order</li>
+                    <li>Return Order</li>
+                    <li>Wish list</li>
+                  </ul>
+                </div>
+                <div class="serv" >
+                  
+                    <strong>Credit Card</strong>
+                 
+                  <ul>
+                    <li>Apply Now</li>
+                    <li>Learn More</li>
+                    <li>Pay My Bill</li>
+                    <li>Emi plans</li>
+                  </ul>
+                </div>
+                <div class="serv">
+                  
+                    <strong>About Us</strong>
+                 
+                  <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>About FullBeauty Brand</li>
+                    <li>Chat with Us</li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+      
+          </div>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

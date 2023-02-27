@@ -1,0 +1,183 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto%20Mono:wght@200);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "spartan", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4 {
+  font-size: 20px;
+  /* line-height: 54px; */
+  color: #222;
+}
+h6 {
+  font-size: 12px;
+  /* line-height: 54px; */
+  font-weight: 700;
+  color: #222;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+/* body {
+  width: 100%;
+} */
+#logo {
+  width: 90px;
+  height: 90px;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgb(218, 215, 235);
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: coral;
+  transition: 0.3s ease;
+}
+#navbar li a :hover,
+#navbar li a :active {
+  color: black;
+}
+
+.layer1 {
+  background-color: rebeccapurple;
+}
+
+.tabs-container,
+.layer2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.layer2 div {
+  padding: 4px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.layer2 div.active {
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container > .logo {
+  flex-basis: 20%;
+}
+
+.logo-container > .search > input[type="text"] {
+  width: 600px;
+  padding: 4px;
+}
+
+
+
+.logo img {
+  width: 60px;
+}
+
+.tabs-container {
+  background-color: white;
+}
+
+.tabs-container .tab {
+    padding: 4px 20px;
+    text-transform: uppercase;
+}
+.comb-image{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: center;
+  
+}
+.search{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+body{
+  width: 90%;
+}
+
+#comb-img{
+  display: flex;
+}
+
+
+
+#comb-img .img{
+  width: 100%;
+}
+
+#comb-img .img img{
+  width: 100%;
+}
+.midbuttons{
+  display: flex;
+  justify-content: space-between;
+}
+.midbuttons button{
+  background-color: purple;
+  color: white;
+  padding:20px 20px 20px 20px;
+
+}
+.services{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+ 
+}
+.services .serv ul{
+  list-style: none;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.catalog{
+  display: flex;
+  
+}
+
+.full {
+  width: 1009;
+}
